@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5BC4F92097F88A00F20F89 /* Swiftz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5BC4F42097F85200F20F89 /* Swiftz.framework */; };
 		BEF61DD7208EC3AC006135C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DD6208EC3AC006135C2 /* AppDelegate.swift */; };
 		BEF61DD9208EC3AC006135C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DD8208EC3AC006135C2 /* ViewController.swift */; };
 		BEF61DDC208EC3AC006135C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF61DDA208EC3AC006135C2 /* Main.storyboard */; };
 		BEF61DDE208EC3AC006135C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF61DDD208EC3AC006135C2 /* Assets.xcassets */; };
 		BEF61DE1208EC3AC006135C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF61DDF208EC3AC006135C2 /* LaunchScreen.storyboard */; };
 		BEF61DEC208EC3AC006135C2 /* StackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DEB208EC3AC006135C2 /* StackerTests.swift */; };
+		BEF61DF8208EC6F9006135C2 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DF7208EC6F9006135C2 /* Tile.swift */; };
+		BEF61DFA208EC72D006135C2 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DF9208EC72D006135C2 /* Board.swift */; };
+		BEF61DFC208ED1CA006135C2 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DFB208ED1CA006135C2 /* Action.swift */; };
+		BEF61DFE208ED254006135C2 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DFD208ED254006135C2 /* Reducer.swift */; };
+		BEF61E00208ED4EF006135C2 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF61DFF208ED4EF006135C2 /* Row.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE5BC4F42097F85200F20F89 /* Swiftz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftz.framework; path = Carthage/Build/iOS/Swiftz.framework; sourceTree = "<group>"; };
 		BEF61DD3208EC3AC006135C2 /* Stacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF61DD6208EC3AC006135C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF61DD8208EC3AC006135C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,11 @@
 		BEF61DE7208EC3AC006135C2 /* StackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF61DEB208EC3AC006135C2 /* StackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackerTests.swift; sourceTree = "<group>"; };
 		BEF61DED208EC3AC006135C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF61DF7208EC6F9006135C2 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		BEF61DF9208EC72D006135C2 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		BEF61DFB208ED1CA006135C2 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		BEF61DFD208ED254006135C2 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		BEF61DFF208ED4EF006135C2 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5BC4F92097F88A00F20F89 /* Swiftz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +69,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE5BC4F82097F88A00F20F89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BEF61DCA208EC3AB006135C2 = {
 			isa = PBXGroup;
 			children = (
 				BEF61DD5208EC3AC006135C2 /* Stacker */,
 				BEF61DEA208EC3AC006135C2 /* StackerTests */,
 				BEF61DD4208EC3AC006135C2 /* Products */,
+				BE5BC4F42097F85200F20F89 /* Swiftz.framework */,
+				BE5BC4F82097F88A00F20F89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +99,7 @@
 		BEF61DD5208EC3AC006135C2 /* Stacker */ = {
 			isa = PBXGroup;
 			children = (
+				BEF61DF6208EC6B9006135C2 /* models */,
 				BEF61DD6208EC3AC006135C2 /* AppDelegate.swift */,
 				BEF61DD8208EC3AC006135C2 /* ViewController.swift */,
 				BEF61DDA208EC3AC006135C2 /* Main.storyboard */,
@@ -96,6 +119,18 @@
 			path = StackerTests;
 			sourceTree = "<group>";
 		};
+		BEF61DF6208EC6B9006135C2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BEF61DF7208EC6F9006135C2 /* Tile.swift */,
+				BEF61DFB208ED1CA006135C2 /* Action.swift */,
+				BEF61DFD208ED254006135C2 /* Reducer.swift */,
+				BEF61DFF208ED4EF006135C2 /* Row.swift */,
+				BEF61DF9208EC72D006135C2 /* Board.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +141,7 @@
 				BEF61DCF208EC3AC006135C2 /* Sources */,
 				BEF61DD0208EC3AC006135C2 /* Frameworks */,
 				BEF61DD1208EC3AC006135C2 /* Resources */,
+				BE5BC4FA2097F8A400F20F89 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -194,12 +230,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BE5BC4FA2097F8A400F20F89 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Swiftz.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swiftz.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEF61DCF208EC3AC006135C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF61DF8208EC6F9006135C2 /* Tile.swift in Sources */,
 				BEF61DD9208EC3AC006135C2 /* ViewController.swift in Sources */,
+				BEF61DFE208ED254006135C2 /* Reducer.swift in Sources */,
+				BEF61DFA208EC72D006135C2 /* Board.swift in Sources */,
+				BEF61DFC208ED1CA006135C2 /* Action.swift in Sources */,
+				BEF61E00208ED4EF006135C2 /* Row.swift in Sources */,
 				BEF61DD7208EC3AC006135C2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +414,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Stacker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byricketts.Stacker;
@@ -368,6 +432,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Stacker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = byricketts.Stacker;
